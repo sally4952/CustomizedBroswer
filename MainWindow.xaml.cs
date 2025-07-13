@@ -125,7 +125,7 @@ namespace Expolerer
         End:
             return;
         InvalidLink:
-            LinkTypeBox.Text = $"https://cn.bing.com/search?q={System.Web.HttpUtility.UrlEncode(link)}";
+            link = LinkTypeBox.Text = $"https://cn.bing.com/search?q={System.Web.HttpUtility.UrlEncode(link)}";
             goto TryLink;
         }
 
